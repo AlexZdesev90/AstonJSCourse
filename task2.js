@@ -1,21 +1,19 @@
 const Company = function (name, salary) {
-  this.name = name;
-  this.salary = salary;
     
   this.income = (value) => {
-    let sum = value - this.salary;
+    let sum = value - salary;
     Company.store.money += sum;
-    let found = Company.store.staffList.find(element => element.name === this.name);
+    let found = Company.store.staffList.find(element => element.name === name);
     found.income += sum;
   };
 
   this.spend = (value) => {
     Company.store.money -= value;
-    let found = Company.store.staffList.find(element => element.name === this.name);
+    let found = Company.store.staffList.find(element => element.name === name);
     found.income -= value;
   };
 
-  Company.addStaff({name: this.name, income: 0});
+  Company.addStaff({name: name, income: 0});
 };
 
 Company.store = {
