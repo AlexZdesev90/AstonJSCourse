@@ -1,0 +1,176 @@
+body {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(71, 71, 9, 0.8),
+        rgb(48, 48, 7)
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+}
+
+.item__frame{
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    border-top-left-radius: 50px ;
+    border-bottom-left-radius: 15px;
+}
+.img {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.img:hover { transform: scale(1.4); }
+
+.btn_choice {
+    background-color: rgb(147, 147, 1);
+    width: 200px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: wheat;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.btn_choice:hover {
+    background-color: rgb(126, 126, 5);
+}
+
+.btn_choice:disabled {
+    background-color: rgb(52, 51, 51);
+}
+
+.choice_text {
+    text-align: center;
+    color: wheat;
+}
+
+.btn {
+    margin:15px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(137, 137, 31);
+    color: #fff;
+    border: none;
+}
+
+.btn_wrapper {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(59, 59, 10);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    background-color: rgb(43, 43, 8, 0.4);
+    border-radius: 10px;
+    padding:10px;
+    margin: 5px;
+}
+
+.text_upgrate {
+    color: palevioletred;
+    text-align: center;
+}
+
+.car_name {
+    color: white;
+    text-align: center;
+}
+
+.property_block {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    width: 360px;
+    color: wheat;
+}
+
+.btn_property{
+    cursor: pointer;
+    background-color: rgb(189, 189, 21);
+    border-radius: 40%;
+    border: none;
+}
+
+.btn_property:hover {
+    background-color: yellowgreen;
+}
+
+.content_compare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(235, 234, 234);
+    font-size: 22px;
+    border-bottom-right-radius:  30px;
+    border-bottom-left-radius:  30px;
+}
+
+.points {
+    color: #fff;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.competing_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.competing_wrapper__item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.content_compare_wrapper {
+    margin: 10px;
+}
+
+.default {
+    color: white;
+}
+
+.info_button {
+    background-color: rgb(137, 137, 31);
+    animation: background-color 1.5s ease infinite;
+}
+
+@keyframes background-color {
+    0% {
+        background-color: rgb(137, 137, 31);
+    }
+    50% {
+        background-color: rgb(63, 63, 14);
+    }
+    100% {
+        background-color: rgb(137, 137, 31);
+    }
+}
