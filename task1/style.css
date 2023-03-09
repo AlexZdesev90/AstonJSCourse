@@ -1,0 +1,196 @@
+:root {
+  --color-white: #fff;
+  --backgound: #42313A;
+  --main-color: rgb(163, 108, 127);
+  --circle-done-color: rgb(200, 80, 80);
+  --circle-n-done: rgb(99, 182, 99);
+  --white: white;
+  --background-done: rgb(227, 171, 171);
+  --background-not-done: rgb(96, 151, 96);
+  --background-done-hover: rgb(157, 115, 115);
+  --background-not-done-hover: rgb(73, 116, 73);
+  --grey: grey;
+  --active-pagination: #42313A;
+  --smoke: whitesmoke;
+  --bg-btns: rgb(189, 95, 95);
+  --black: #000;
+  }
+
+.pagination a {
+  color: var(--color-flash);
+  background-color: var(--color-main);
+}
+
+body {
+  background-color: var(--backgound);
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.head_title {
+  text-align: center;
+  margin: 0px;
+}
+
+.flex_wrapper {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+
+.children {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.circle_done {
+  background-color: var(--circle-done-color);
+}
+
+.circle_not_done {
+  background-color: var(--circle-n-done);
+}
+
+.todos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 18px;
+  margin: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 42%;
+  min-height: 3em;
+  flex-wrap: wrap;
+  color: var(--black);
+}
+
+.link {
+  position: absolute;
+  text-decoration: none;
+  bottom: 5px;
+  right: 5px;
+}
+
+.link:hover {
+  color: var(--white);
+}
+
+.done {
+  background-color: var(--background-done);
+}
+
+.not_done {
+  background-color: var(--background-not-done);
+}
+
+.not_done:hover {
+  background-color: var(--background-not-done-hover);
+}
+
+.done:hover {
+  background-color: var(--background-done-hover);
+}
+
+.info {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+
+.pageNumber {
+  background-color: transparent;
+  color: var(--grey);
+  cursor: pointer;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  margin:2px
+}
+
+.pageNumber:hover {
+  background-color: var(--grey);
+  color: var(--active-pagination);
+}
+
+.active {
+  background-color: var(--active-pagination);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--smoke);
+  align-items: center;
+  width: 80%;
+  height: 50vh;
+  margin: 1em auto;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 8px 8px 500px var(--main-color);
+  font-size: 40px;
+}
+
+.back {
+  font-size: 20px;
+  background-color: var(--backgound);
+  cursor: pointer;
+  border-radius: 5px;;
+}
+
+.back:hover {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.btns {
+  width: 80px;
+  background-color: var(--bg-btns);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  border-bottom-left-radius: 15px;
+  margin-right: 10px;
+}
+
+.prev:hover {
+  background-color: var(--grey);
+}
+
+.next {
+  border-bottom-right-radius: 15px;
+  margin-left: 10px;
+}
+
+.next:hover {
+  background-color: var(--grey);
+}
